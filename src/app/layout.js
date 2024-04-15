@@ -12,9 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>header</header>
+        <header className="flex justify-center items-center">header</header>
         {children}
-        <footer>footer</footer>
+        <footer className="flex justify-center items-center ">footer</footer>
       </body>
     </html>
   );
