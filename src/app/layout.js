@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,8 +14,18 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header className="flex justify-center items-center">header</header>
+        <div className="flex flex-row gap-10 pb-5">
+          <Link href="/">Home</Link>
+          <Link href="/blog/1">Blog 1</Link>
+          <Link href="/blog/1/2">Blog 1 id 2</Link>
+          <Link href="/dashboard">Dashboard</Link>
+          <Link href="/ssrFetch">SSR</Link>
+          <Link href="/csrFetch">CSR</Link>
+        </div>
         {children}
-        <footer className="flex justify-center items-center ">footer</footer>
+        <footer className="flex justify-center items-center fixed bottom-0 w-full">
+          footer
+        </footer>
       </body>
     </html>
   );

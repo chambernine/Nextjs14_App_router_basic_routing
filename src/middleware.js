@@ -6,5 +6,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: "/blog/:path*",
+  matcher: "/dashboard/:path*",
 };
