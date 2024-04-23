@@ -21,6 +21,10 @@ export default function RootLayout({ children }) {
           <Link href="/dashboard">Dashboard</Link>
           <Link href="/ssrFetch">SSR</Link>
           <Link href="/csrFetch">CSR</Link>
+          <Link href="/serverAction">ServerAction</Link>
+          <Link className="bg-blue-600 text-white rounded-md px-2" href="/example">
+            Example
+          </Link>
         </div>
         {children}
         <footer className="flex justify-center items-center fixed bottom-0 w-full">
